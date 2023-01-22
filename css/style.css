@@ -1,28 +1,34 @@
-* {
+*root {
+   --color-gray: #4D533C;
+}
+
+html,
+body {
    margin: 0;
    padding: 0;
+   font-family: 'Poppins';
 }
 .section-1 {
-   margin-top: 10px;
    background-image: url('../img/main-bg-img.jpg');
-   background-size: contain;
+   background-size: cover;
    width: 100vw;
    background-repeat: no-repeat;
-   height: 100vh;
-   font-family: 'Poppins';
+   height: 100%;
+}
+
+.container nav {
+   margin-top: 30px;
 }
 
 .section-1-text {
    color: white;
-   margin-top: 20vh;
+   margin-top: 16vh;
 }
 
 .section-1-text h1 {
-   margin-top: 2.42vh;
-   margin-bottom: 2.64vh;
    font-family: 'Poppins Bold';
    font-size: 60px;
-   line-height: 74px;
+   line-height: 76px;
 }
 
 .section-1-text p {
@@ -32,10 +38,83 @@
 }
 
 .get-touch a {
-   margin-top: 44px;
    font-family: 'Poppins Bold';
    text-decoration-line: underline;
-   font-size: 1vw;
+   font-size: 16px;
    line-height: 18px;
-   color: #FFD723;
+}
+
+.section-body {
+
+   height: 100%;
+   padding-top: 149px;
+   padding-bottom: 147px;
+}
+
+.section-body .col-7 h1 {
+   color: var(--color-gray);
+   font-family: 'Poppins Bold';
+   font-size: 44px;
+}
+
+.my-padd {
+   padding-left: 50px!important;
+   padding-right: 60px!important;
+}
+
+.col-lg-6 h1 {
+   font-size: 30px;
+   color: var(--color-gray);
+}
+
+.section-body .container .col-lg-6 p {
+   /* margin-top: 20px; */
+   font-size: 16px;
+   color: rgba(33, 56, 66, 0.6);
+
+}
+
+.disabled {
+   color: #D4D6D4;
+}
+.disabled:hover {
+   color: #ffc107;
+}
+
+.section-footer {
+   padding-top: 110px;
+   padding-bottom: 50px;
+   background-image: url(../img/footer-bg.jpg);
+   background-size: cover;
+   height: 130%;
+   width: 100vw;
+}
+.container .my-border {
+   border-top: solid #5D6544 1px;
+   border-bottom: solid #5D6544 1px;
+}
+
+.container .row p {
+   font-size: 16px;
+line-height: 26px;
+color: #B6C197;
+}
+
+.number-bold {
+   font-family: Poppins Bold;
+   font-size: 16px;
+   line-height: 40px;
+   color: #FFFFFF;
+}
+
+.container .row h5 {
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 38px;
+   text-transform: uppercase;
+   color: #FFFFFF;
+}
+
+.section-footer .container .row .col-2 {
+   border-right: solid #5D6544 1px;
 }
